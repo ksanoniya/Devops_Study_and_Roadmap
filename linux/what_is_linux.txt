@@ -1,0 +1,18 @@
+Linux is mostly widely used free and open soucre operating system. It is highly Secure and trusted for developer and enterprice worldwide use
+
+Linux was developed by Linus Torvalds in 1991.
+
+linux operating system is similer os as unix. but unlike linux. you can need purchase a unix licens before using it. whereas linux is no need licens it is free
+
+unix example like mac operation system.. yes apple mac book laptops have unix os 
+
+let wee discuss features of linux 
+1. It is free and open soucre operating soucre. that's linux is availbe for all and we can easily update and modify 
+2. linux is very Secure operating system when other like windows
+3. This os is nothing need to many updates. linux have few updates
+4. linux support multi users simultaneously. Each user can have separate files, settings, and permissions
+
+
+
+Importing point 
+Everything in Linux files or floders

@@ -1,0 +1,41 @@
+## memory commands
+
+df -- show storage
+df -h -- show memory
+du -- show folder memory
+free -- disk space
+free -h -- shoe disk space
+top -- all proccess
+ps -- bash proccess
+kill -- kill proccess
+vmstat -- chashe
+
+## system power commands
+
+sudo shutdowm -- shutdowm
+sudo reboot -- reboot
+sudo poweroff -- power off  
+
+## apt commands
+
+sudo apt update -- update package list
+sudo apt upgrade -- upgrade packages  
+sudo apt install -- install package
+sudo apt remove -- remove package
+sudo apt purge -- remove package and config files
+sudo apt autoremove -- remove unused packages
+sudo apt search -- search package
+sudo apt show -- show package details
+
+## systemctl commands
+
+sudo systemctl restart -- restart service
+sudo systemctl stop -- stop service 
+sudo systemctl start -- start service
+sudo systemctl status -- service status
+sudo systemctl enable -- enable service
+sudo systemctl disable -- disable service
+sudo systemctl daemon-reload -- reload service configuration
+sudo systemctl list-units -- list all services
+sudo systemctl list-unit-files -- list all unit files
+sudo systemctl is-active -- check if service is active  

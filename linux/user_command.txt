@@ -1,0 +1,5 @@
+1 uname -- show platform 
+2 uptime -- show server info runting time and user
+3 who -- show all user
+4 whoami -- current user
+5 id -- show user id and group

@@ -1,0 +1,42 @@
+-------- basic commmand --------
+
+.. list commands ..
+1 ls -- show all present files and folders
+2 ls -a -- show all hidden files and folders
+3 ls -l -- show all present files and folder with permissions
+4 ls -r -- show reverse order 
+  # and many more ls command used in linux but generally this commands 
+
+.. make directory ..
+1 mkdir directoryname -- create directory 
+2 mkdir firstdirectory seconddirectory .. .. more -- create multiple directory
+
+.. delete directory ..
+1 rm -d -- delete empty directory
+2 rm -dir -- delete empty directory
+3 rm -r -- delete directory
+
+.. create file ..
+1 vim filename.exe -- create file
+2 touch filename.exe -- create file
+3 nano filename.exe -- create file
+4 touch file1 file2 -- create multiple file
+
+.. delete file ..
+1 rm filename -- delete filename
+2 rm filename1 filename2 -- delete multiple file
+
+.. present working directory ..
+1 pwd -- show current path
+
+.. change directory ..
+1 cd .. -- one step back
+2 cd path -- back to path
+3 cd ~ -- back to home
+
+.. update ..
+1 sudo apt update 
+
+.. upgrade ..
+1 sudo apt upgrade 
+
