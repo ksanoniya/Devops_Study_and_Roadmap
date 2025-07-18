@@ -1,0 +1,12 @@
+# pull and run dockerhub images
+docker pull hello-world
+docker run hello-world
+
+# run docker file 
+docker build -t hello-world .
+docker run hello-world 
+
+# docker run with option
+docker run hello-world -name hello-world
+docker run -d hello-world -name hello-world
+docker run -d -P 80:80 hello-world -name hello-world

@@ -1,0 +1,17 @@
+-- init repo --
+git init
+
+-- git gobal commands --
+git config --gobal user.name "your name" -- set gobal username
+git config --gobal user.email "your email" -- set user email
+
+-- git remote --
+git remote add origin 'path' -- set remote path in local
+
+-- git push to git commands --
+git add "filename1 filename2" -- track file
+git add . -- track all file
+git status -- check file state
+git commit -m "message what you do" -- commit
+git push origin -u "branch name"
+
