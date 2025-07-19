@@ -38,3 +38,8 @@ sudo rm -rf /var/lib/nginx/*
 sudo rm -rf /var/cache/nginx/*
 sudo rm -rf /var/run/nginx.pid
 sudo rm -rf /var/run/nginx.sock
+
+# nginx default port
+// localhost:80
+// localhost:8080 (if configured)
+// localhost:443 (if SSL configured)
