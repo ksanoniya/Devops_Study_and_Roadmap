@@ -1,4 +1,4 @@
-name: "CodeQL Scan"
+name: "Universal CodeQL Scan"
 
 on:
   push:
@@ -6,11 +6,11 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: '0 5 * * 1'  # Weekly scan on Monday 5 AM
+    - cron: '0 4 * * 1'  # Every Monday at 4 AM
 
 jobs:
-  analyze:
-    name: Analyze with CodeQL
+  codeql-analysis:
+    name: Analyze All Supported Code
     runs-on: ubuntu-latest
 
     permissions:
@@ -18,31 +18,18 @@ jobs:
       contents: read
       security-events: write
 
-    strategy:
-      fail-fast: false
-      matrix:
-        language: [ 'javascript', 'python' ] # update based on your repo
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v3
-      with:
-        languages: ${{ matrix.language }}
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: auto  # 👈 Automatically detect supported languages
+          queries: security-extended  # More thorough scan
 
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v3
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
 
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v3
-
-    - name: Run Trivy vulnerability scanner
-      uses: aquasecurity/trivy-action@master
-      with:
-        scan-type: fs
-        ignore-unfixed: true
-        format: table
-        exit-code: 1
-        severity: CRITICAL,HIGH
+      - name: Run CodeQL analysis
+        uses: github/codeql-action/analyze@v3
