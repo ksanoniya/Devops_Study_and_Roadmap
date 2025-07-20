@@ -1,0 +1,10 @@
+name: gitaction hello world
+
+on: [push]
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print Hello world
+        run: echo "hello world"
