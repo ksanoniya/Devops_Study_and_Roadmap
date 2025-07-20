@@ -1,6 +1,9 @@
 name: gitaction hello world
 
-on: [push]
+on: 
+    push:
+        branches:
+         - main
 
 jobs:
   hello_world:
