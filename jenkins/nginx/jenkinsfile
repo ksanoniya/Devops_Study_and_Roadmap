@@ -1,0 +1,31 @@
+pipeline{
+    agent any
+    stages{
+        stage('nginx image pulling in docker hub'){
+            steps{
+                echo 'Pulling nginx image from Docker Hub...'
+                sh 'docker pull nginx:latest'
+            }
+        }
+        stage('Run nginx container'){
+            steps{
+                echo 'Running nginx container...'
+                sh 'docker run -d -p 8080:80 nginx:latest'
+            }
+        }
+        stage('Verify nginx is running'){
+            steps{
+                echo 'Verifying nginx is running...'
+                sh 'curl -I http://localhost:8080'
+            }
+        }
+        stage('Clean up'){
+            steps{
+                echo 'Stopping and removing nginx container...'
+                sh 'docker stop $(docker ps -q --filter ancestor=nginx:latest) || true'
+                sh 'docker rm $(docker ps -aq --filter ancestor=nginx:latest) || true'
+            }
+        }
+
+    }
+}
