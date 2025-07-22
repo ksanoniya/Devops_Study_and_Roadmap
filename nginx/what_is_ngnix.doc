@@ -1,0 +1,28 @@
+ What is NGINX? (The Full Story)
+NGINX (pronounced "engine-x") is a high-performance web server and reverse proxy server created by Igor Sysoev in 2004. It was originally designed to solve the C10K problem — how to handle 10,000+ simultaneous connections — which older web servers like Apache struggled with.
+
+But over the years, NGINX evolved into a complete application delivery platform.
+
+📦 What Can NGINX Do?
+NGINX isn’t just one tool — it's multiple tools packed into one:
+
+Purpose	What It Means
+Web Server	Serves static files: HTML, CSS, JS, images, etc.
+Reverse Proxy	Forwards client requests to backend servers
+Load Balancer	Distributes traffic across multiple servers
+API Gateway	Routes API requests, handles security, authentication, etc.
+Content Cache	Caches static and dynamic content to reduce load on backend
+TLS/SSL Termination	Handles HTTPS encryption, reducing the burden on backend
+Streaming Server	Serves live media streams using protocols like RTMP
+
+🧠 How NGINX Works (In Simple Terms)
+NGINX is asynchronous and event-driven, unlike Apache which is thread-based. That means:
+
+It doesn’t create a new process/thread for every connection.
+
+One worker can handle thousands of connections efficiently.
+
+It uses a non-blocking architecture — no waiting around like Apache does.
+
+This is why it’s blazing fast and perfect for handling modern high-traffic websites and APIs.
+
