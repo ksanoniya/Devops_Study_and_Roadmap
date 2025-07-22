@@ -38,3 +38,4 @@ git rebase <branch>                           Rebase current branch onto given o
 you are master branch commit then you kar some change in main branch. this condition user git merge commands
 git switch master
 git merge main
+
