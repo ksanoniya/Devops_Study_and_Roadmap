@@ -15,3 +15,8 @@ git status -- check file state
 git commit -m "message what you do" -- commit
 git push origin -u "branch name"
 
+-- merge commands --
+you are master branch commit then you kar some change in main branch. this condition user git merge commands
+git switch master
+git merge main
+
