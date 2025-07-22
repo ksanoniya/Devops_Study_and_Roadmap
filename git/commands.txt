@@ -15,8 +15,26 @@ git status -- check file state
 git commit -m "message what you do" -- commit
 git push origin -u "branch name"
 
+-- git branch --
+git branch                                    List all local branches              
+git branch -r                                 List remote branches                 
+git branch -a                                 List ALL branches (local + remote)   
+git branch <branch-name>                      Create new branch                    
+git checkout <branch-name>                    Switch to a branch (old way)         
+git switch <branch-name>                      Switch to a branch (new way)         
+git switch -c <branch-name>                   Create and switch to a new branch    
+git checkout -b <branch-name>                 Same as above (older version)        
+git branch -d <branch-name>                   Delete a local branch (safe)         
+git branch -D <branch-name>                   Force delete a branch (unsafe)       
+git push origin <branch-name>                 Push branch to remote                
+git push --set-upstream origin <branch-name>  Link local → remote branch           
+git branch -m <new-name>                      Rename current branch                
+git branch -m <old> <new>                     Rename any branch                    
+git merge <branch>                            Merge branch into current branch     
+git rebase <branch>                           Rebase current branch onto given one 
+
+
 -- merge commands --
 you are master branch commit then you kar some change in main branch. this condition user git merge commands
 git switch master
 git merge main
-
