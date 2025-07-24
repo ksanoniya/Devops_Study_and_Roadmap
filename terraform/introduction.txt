@@ -1,0 +1,25 @@
+what is terraform ?
+- terraform is open-source iac (infrastructure as code) tool.
+- Developed by Mitchell Hashimoto and Armon Dadgar 2012 in Hashicrop company
+- In 2017 terraform create open source policy in bussiness linces  
+- In February 2025, IBM acquired HashiCorp and its offerings, including Terraform.
+
+what is iac ?
+iac allow to create or mange your infrastructure and configuration file rather than through a graphical user interface reuse and share infrastructure and configuration
+
+advantages of iac
+- state management
+- safe consistent 
+- repeatable
+- resource configuration version , reuse , share
+- work with multiple cloud
+- configuration for human
+- track resource with state 
+
+step
+- create configuration
+- plan
+- apply
+
+
+
