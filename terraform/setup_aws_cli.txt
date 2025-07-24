@@ -1,0 +1,45 @@
+install and setup aws cli
+
+-- Linux --
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+gpg --import public-key-file-name
+
+curl -o awscliv2.sig https://awscli.amazonaws.com/
+
+awscli-exe-linux-x86_64.zip.sig
+
+unzip awscliv2.zip
+
+sudo ./aws/install
+
+./aws/install -i /usr/local/aws-cli -b /usr/local/bin
+
+aws --version
+
+--- macos ---
+
+ln -s /folder/installed/aws-cli/aws /usr/local/bin/aws
+ln -s /folder/installed/aws-cli/aws_completer /usr/local/bin/aws_completer
+
+sudo ln -s /folder/installed/aws-cli/aws /usr/local/bin/aws
+sudo ln -s /folder/installed/aws-cli/aws_completer /usr/local/bin/aws_completer
+
+which aws
+aws --version
+
+-- windows --
+
+msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
+
+msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi /qn
+
+aws --version
