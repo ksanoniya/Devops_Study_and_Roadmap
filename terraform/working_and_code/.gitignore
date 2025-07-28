@@ -1,0 +1,18 @@
+# Terraform local state & providers
+.terraform/
+*.tfstate
+*.tfstate.*
+*.backup
+*.log
+
+# Terraform keypairs
+terrakey
+terrakey.pub
+# VS Code or IDE stuff
+.vscode/
+.idea/
+*.swp
+
+# OS stuff
+.DS_Store
+Thumbs.db
